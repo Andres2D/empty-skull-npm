@@ -1,6 +1,6 @@
 {
   "name": "empty-skull",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Helper functions to get specific data and operate JS objects.",
   "main": "src/index.js",
   "scripts": {
