@@ -10,3 +10,7 @@ import { filterResults } from '../common/array-operations.js';
 export const getFlagSvg = (name, isFull = false) => {
   return filterResults(flagsCollection, name, isFull);
 };
+
+export const getAllFlags = () => {
+  return [...flagsCollection];
+};

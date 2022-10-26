@@ -1,7 +1,9 @@
-import { getFlagSvg } from './countries/index.js';
-import { getTeamPng } from './football/index.js';
+import { getFlagSvg, getAllFlags } from './countries/index.js';
+import { getTeamPng, getAllTeams } from './football/index.js';
 
 export {
   getFlagSvg,
-  getTeamPng
+  getAllFlags,
+  getTeamPng,
+  getAllTeams
 };

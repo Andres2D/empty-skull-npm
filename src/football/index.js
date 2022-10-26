@@ -10,3 +10,7 @@ import { filterResults } from '../common/array-operations.js';
 export const getTeamPng = (name, isFull = false) => {
   return filterResults(footballTeams, name, isFull);
 };
+
+export const getAllTeams = () => {
+  return [...footballTeams];
+};
