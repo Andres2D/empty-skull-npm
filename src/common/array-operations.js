@@ -10,5 +10,5 @@ export const filterResults = (collection, name, isFull) => {
     return [...collection].filter(c => c.name.toLocaleLowerCase() === name.toLocaleLowerCase())[0];
   }
 
-  return [...collection].filter(c => c.name.toLowerCase().includes(name.toLowerCase()))[0];
+  return [...collection].filter(c => c.name.toLowerCase().includes(name.toLowerCase()));
 };

@@ -17,7 +17,7 @@ const mockArray = [
 
 test('Should filter partially', () => {
   expect(filterResults(mockArray, 'And', false))
-    .toEqual({ name: 'Andres', position: 'Developer'});
+    .toEqual([{ name: 'Andres', position: 'Developer'}]);
 });
 
 test('Should filter completely', () => {
