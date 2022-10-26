@@ -1,0 +1,32 @@
+{
+  "name": "empty-skull",
+  "version": "1.0.0",
+  "description": "Helper functions to get specific data and operate JS objects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andres2D/empty-skull-npm.git"
+  },
+  "keywords": [
+    "helpers",
+    "football",
+    "js"
+  ],
+  "author": "Andres 2D",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andres2D/empty-skull-npm/issues"
+  },
+  "homepage": "https://github.com/Andres2D/empty-skull-npm#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.19.4",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^29.2.2",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^29.2.2",
+    "np": "^7.6.2"
+  }
+}
