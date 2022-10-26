@@ -1,4 +1,5 @@
 import { flagsCollection } from './flags.js';
+import { filterResults } from '../common/array-operations.js';
 
 /**
  * 
@@ -6,10 +7,6 @@ import { flagsCollection } from './flags.js';
  * @param {*} isFull flag to know if the name is full or partial
  * @returns An object with the name and the flag svg link
  */
-export const getFlagSvg = (name, isFull) => {
-  if(isFull) {
-    return [...flagsCollection].filter(f => f.name.toLocaleLowerCase() === name.toLocaleLowerCase())[0];
-  }
-
-  return [...flagsCollection].filter(f => f.name.toLowerCase().includes(name.toLowerCase()))[0];
+export const getFlagSvg = (name, isFull = false) => {
+  return filterResults(flagsCollection, name, isFull);
 };
