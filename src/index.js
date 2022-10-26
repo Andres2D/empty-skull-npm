@@ -1,5 +1,5 @@
 import { getFlagSvg } from './countries/index.js';
 
-export default {
+export {
   getFlagSvg
-}
+};
