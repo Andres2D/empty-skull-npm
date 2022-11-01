@@ -1,5 +1,5 @@
-import { getFlagSvg, getAllFlags } from './index.js';
-import { flagsCollection } from './flags.js';
+import { getFlagSvg, getAllFlags } from './index';
+import { flagsCollection } from './flags';
 
 test('Should return the flag with partial argument', () => {
   expect(getFlagSvg('Col', false))

@@ -5,7 +5,7 @@
  * @param {*} isFull flag to know if the name is full or partial
  * @returns An object with the name and the flag svg link
  */
-export const filterResults = (collection, name, isFull) => {
+export const filterResults = (collection: any, name: string, isFull: boolean) => {
   if(isFull) {
     return [...collection].filter(c => c.name.toLowerCase() === name.toLowerCase())[0];
   }
