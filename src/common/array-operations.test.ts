@@ -1,4 +1,4 @@
-import { filterResults } from './array-operations.js';
+import { filterResults } from './array-operations';
 
 const mockArray = [
   {

@@ -1,5 +1,5 @@
-import { getTeamPng, getAllTeams } from './index.js';
-import { footballTeams } from './clubTeams.js';
+import { getTeamPng, getAllTeams } from './index';
+import { footballTeams } from './clubTeams';
 
 test('Should return the team with partial argument', () => {
   expect(getTeamPng('liv', false))
