@@ -6,9 +6,9 @@
   "scripts": {
     "build": "babel src -d build",
     "test": "jest",
-    "dev": "watch 'npm run build' src",
+    "dev": "watch 'npm run build:ts' src",
     "test:watch": "npm test -- --watch",
-    "prepublish": "npm run build",
+    "prepublish": "npm run build:ts",
     "release": "np"
   },
   "repository": {
