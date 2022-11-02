@@ -1,4 +1,6 @@
-export const flagsCollection = new Set(
+import { Country } from "../interfaces/country.interface";
+
+export const flagsCollection: Set<Country> = new Set(
   [
     {
         name: "Iceland",

@@ -1,5 +1,6 @@
 import { flagsCollection } from './flags';
 import { filterResults } from '../common/array-operations';
+import { Country } from '../interfaces/country.interface';
 
 /**
  * 
@@ -7,10 +8,10 @@ import { filterResults } from '../common/array-operations';
  * @param {*} isFull flag to know if the name is full or partial
  * @returns An object with the name and the flag svg link
  */
-export const getFlagSvg = (name: string, isFull = false) => {
+export const getFlagSvg = (name: string, isFull = false): Country | Country[] => {
   return filterResults(flagsCollection, name, isFull);
 };
 
-export const getAllFlags = () => {
+export const getAllFlags = (): Country[] => {
   return [...flagsCollection];
 };

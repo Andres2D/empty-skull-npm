@@ -1,4 +1,6 @@
-export const footballTeams = new Set([
+import { Team } from "../interfaces/team.interface";
+
+export const footballTeams: Set<Team> = new Set([
   {
     img: "https://media.api-sports.io/football/teams/8.png",
     name: 'Colombia',
