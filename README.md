@@ -8,6 +8,15 @@ some JavaScript operations.
   $ npm install empty-skull --save-dev
 ```
 
+## Getting all countries flags
+```javascript
+import { getAllFlags } from 'empty-skull';
+
+console.log(getAllFlags(); 
+// Return a list with all the flags of all the countries, perfect to 
+// create a list selector
+```
+
 ## Getting country flag svg
 
 ```javascript
@@ -22,6 +31,17 @@ console.log(getFlagSvg('Canada', true));
 console.log(getFlagSvg('none', true));
 // undefined
 ```
+
+## Getting all the teams flags
+```javascript
+import { getAllTeams } from 'empty-skull';
+
+console.log(getAllTeams(); 
+// Return a list with all the flags some football teams, perfect to 
+// create a list selector
+```
+> The teams list will be constantly updated to add more teams
+
 
 ## Getting football club shield png
 
