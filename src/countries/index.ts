@@ -1,5 +1,5 @@
-import { flagsCollection } from './flags.js';
-import { filterResults } from '../common/array-operations.js';
+import { flagsCollection } from './flags';
+import { filterResults } from '../common/array-operations';
 
 /**
  * 
@@ -7,7 +7,7 @@ import { filterResults } from '../common/array-operations.js';
  * @param {*} isFull flag to know if the name is full or partial
  * @returns An object with the name and the flag svg link
  */
-export const getFlagSvg = (name, isFull = false) => {
+export const getFlagSvg = (name: string, isFull = false) => {
   return filterResults(flagsCollection, name, isFull);
 };
 
