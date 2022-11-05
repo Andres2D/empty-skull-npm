@@ -1,4 +1,4 @@
-export interface Team {
-  name: string;
+import { Base } from './common.interface';
+export interface Team extends Base {
   img: string;
 };

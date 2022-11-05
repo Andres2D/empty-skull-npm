@@ -9,7 +9,7 @@ import { Country } from '../interfaces/country.interface';
  * @returns An object with the name and the flag svg link
  */
 export const getFlagSvg = (name: string, isFull = false): Country | Country[] => {
-  return filterResults(flagsCollection, name, isFull);
+  return filterResults<Country>(flagsCollection, name, isFull);
 };
 
 export const getAllFlags = (): Country[] => {

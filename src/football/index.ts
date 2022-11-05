@@ -9,7 +9,7 @@ import { Team } from '../interfaces/team.interface';
  * @returns An object with the name and the flag svg link
  */
 export const getTeamPng = (name: string, isFull = false): Team | Team[] => {
-  return filterResults(footballTeams, name, isFull);
+  return filterResults<Team>(footballTeams, name, isFull);
 };
 
 export const getAllTeams = (): Team[] => {
