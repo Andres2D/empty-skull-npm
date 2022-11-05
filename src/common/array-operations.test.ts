@@ -1,6 +1,6 @@
 import { filterResults } from './array-operations';
 
-const mockArray = [
+const mockArray = new Set([
   {
     name: 'Andres',
     position: 'Developer'
@@ -13,7 +13,7 @@ const mockArray = [
     name: 'Steve',
     position: 'Commercial'
   }
-];
+]);
 
 test('Should filter partially', () => {
   expect(filterResults(mockArray, 'And', false))
