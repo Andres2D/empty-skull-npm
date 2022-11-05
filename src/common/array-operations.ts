@@ -1,3 +1,4 @@
+import { Base } from '../interfaces/common.interface';
   /**
  * 
  * @param {*} collection set collection to filter
@@ -5,7 +6,7 @@
  * @param {*} isFull flag to know if the name is full or partial
  * @returns An object with the name and the flag svg link
  */
-export const filterResults = (collection: any, name: string, isFull: boolean): any => {
+export const filterResults = <T extends Base>(collection: Set<T>, name: string, isFull: boolean): T | T[]  => {
   if(isFull) {
     return [...collection].filter(c => c.name.toLowerCase() === name.toLowerCase())[0];
   }
